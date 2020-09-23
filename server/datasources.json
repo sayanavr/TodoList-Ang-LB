@@ -1,0 +1,16 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mysqlDsSH": {
+    "host": "sl-us-south-1-portal.42.dblayer.com",
+    "port": 23120,
+    "url": "",
+    "database": "jobs",
+    "password": "Stable123",
+    "name": "mysqlDsSH",
+    "user": "jobs",
+    "connector": "mysql"
+  }
+}

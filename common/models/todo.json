@@ -1,0 +1,39 @@
+{
+  "name": "todo",
+  "plural": "todos",
+  "base": "PersistedModel",
+  "forceId":false,
+  "idInjection": true,
+  "options": {
+    "mysql": {
+      "schema": "jobs",
+      "table": "todo"
+    },
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true,
+      "mysql": {
+        "columnName": "id"
+      }
+    },
+    "text": {
+      "type": "string",
+      "mysql": {
+        "columnName": "text"
+      }
+    },
+    "date": {
+      "type": "date",
+      "mysql": {
+        "columnName": "date"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
