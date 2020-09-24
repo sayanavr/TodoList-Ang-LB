@@ -12,9 +12,10 @@
                         <label for="txt">Item</label> 
                         <input type="text" [(ngModel)]="todo.text" name="text" id="txt" class="form-control">
                     </div>
-                    <button (click)="addTodo()" class="btn btn-primary mr-3">Save</button>
-                    <button (click)="editTodo()" class="btn btn-info">Edit</button>
+                    <!-- <button (click)="addTodo()" class="btn btn-primary mr-3">Save</button>
+                    <button (click)="editTodo()" class="btn btn-info">Edit</button> -->
                     <!-- {{todo.id}} {{todo.text}} -->
+                    <button (click)="onSubmit()" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>

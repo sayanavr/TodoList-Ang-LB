@@ -6,10 +6,10 @@ import {SDKBrowserModule} from './shared/sdk/index';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { from } from 'rxjs';
 import { TodosComponent } from './todos/todos.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import {BaseLoopBackApi} from './shared/sdk/services/core/base.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    SDKBrowserModule
+    SDKBrowserModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
