@@ -2,7 +2,6 @@
   "name": "todo",
   "plural": "todos",
   "base": "PersistedModel",
-  "forceId":false,
   "idInjection": true,
   "options": {
     "mysql": {
@@ -11,6 +10,7 @@
     },
     "validateUpsert": true
   },
+  "forceId": false,
   "properties": {
     "id": {
       "type": "number",
@@ -34,6 +34,13 @@
   },
   "validations": [],
   "relations": {},
-  "acls": [],
+  "acls": [
+    {
+      "accessType": "*",
+      "principalType": "ROLE",
+      "principalId": "$unauthenticated",
+      "permission": "DENY"
+    }
+  ],
   "methods": {}
 }

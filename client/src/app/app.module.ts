@@ -10,13 +10,19 @@ import { TodosComponent } from './todos/todos.component';
 import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import {BaseLoopBackApi} from './shared/sdk/services/core/base.service';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TodosComponent,
     HeaderComponent,
-    NavbarComponent
+    NavbarComponent,
+    DashboardComponent,
+    NotfoundComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
